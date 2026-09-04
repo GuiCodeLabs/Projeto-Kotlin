@@ -1,62 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/fundo"
+    android:fillViewport="true">
 
-    <!-- Logo da Unipê - Cabeçalho -->
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo_unipe"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="29dp" />
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <!-- Texto do nome da Faculdade -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fundo_destaque"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="28dp">
 
-    <TextView
-        android:layout_width="98dp"
-        android:layout_height="46dp"
-        android:text="Unipê"
-        android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.439" />
+            <ImageView
+                android:id="@+id/imagemCurso"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:contentDescription="Imagem relacionada ao curso de ADS"
+                android:src="@drawable/img_ads" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Conheça o Curso"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="505dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="UNIPÊ"
+                android:textColor="@color/branco"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Disciplinas"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="591dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="Análise e Desenvolvimento\nde Sistemas"
+                android:textColor="@color/branco"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="375dp"
-        android:layout_height="110dp"
-        android:justificationMode="inter_word"
-        android:lineSpacingExtra="4sp"
-        android:padding="16dp"
-        android:text="O curso de ADS forma profissionais capazes de projetar e implementar soluções de software..."
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="372dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Tecnologia para transformar ideias em soluções"
+            android:textColor="@color/azul_escuro"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="4dp"
+            android:text="O curso de ADS prepara profissionais para analisar problemas, desenvolver sistemas, trabalhar com bancos de dados e criar aplicações para web e dispositivos móveis."
+            android:textColor="@color/texto_secundario"
+            android:textSize="16sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/botaoConheca"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:text="Conheça o curso"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/botaoDisciplinas"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/azul_escuro"
+            android:text="Disciplinas"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
