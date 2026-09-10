@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fundo"
@@ -8,81 +7,66 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="28dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/fundo_destaque"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="28dp">
-
-            <ImageView
-                android:id="@+id/imagemCurso"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:contentDescription="Imagem relacionada ao curso de ADS"
-                android:src="@drawable/img_ads" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:text="UNIPÊ"
-                android:textColor="@color/branco"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:gravity="center"
-                android:text="Análise e Desenvolvimento\nde Sistemas"
-                android:textColor="@color/branco"
-                android:textSize="26sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/fundo_logo"
+            android:contentDescription="@string/logo_description"
+            android:padding="25dp"
+            android:src="@drawable/ic_chapeu" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Tecnologia para transformar ideias em soluções"
-            android:textColor="@color/azul_escuro"
-            android:textSize="20sp"
+            android:layout_marginTop="22dp"
+            android:text="@string/nome_universidade"
+            android:textColor="@color/texto"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:lineSpacingExtra="4dp"
-            android:text="O curso de ADS prepara profissionais para analisar problemas, desenvolver sistemas, trabalhar com bancos de dados e criar aplicações para web e dispositivos móveis."
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Análise e Desenvolvimento de Sistemas"
             android:textColor="@color/texto_secundario"
             android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Aprenda a criar soluções tecnológicas inovadoras."
+            android:textColor="@color/texto_secundario"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/botaoConheca"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="52dp"
             android:layout_marginTop="28dp"
-            android:text="Conheça o curso"
+            android:background="@drawable/botao_roxo"
+            android:text="Conheça o Curso"
             android:textAllCaps="false"
-            android:textSize="16sp" />
+            android:textColor="@color/branco"
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/botaoDisciplinas"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginTop="12dp"
-            android:backgroundTint="@color/azul_escuro"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/botao_roxo"
             android:text="Disciplinas"
             android:textAllCaps="false"
-            android:textSize="16sp" />
-
+            android:textColor="@color/branco"
+            android:textSize="15sp" />
     </LinearLayout>
 </ScrollView>

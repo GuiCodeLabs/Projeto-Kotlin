@@ -12,32 +12,25 @@
         android:padding="28dp">
 
         <TextView
+            android:id="@+id/textoNomeDisciplina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Sobre o Curso"
+            android:text="Desenvolvimento Mobile"
             android:textColor="@color/texto"
-            android:textSize="26sp"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/textoCargaHoraria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
-            android:text="Análise e Desenvolvimento de Sistemas"
-            android:textColor="@color/texto"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Duração: 4 semestres"
+            android:layout_marginTop="22dp"
+            android:text="Carga horária: 80 horas"
             android:textColor="@color/texto_secundario"
             android:textSize="16sp" />
 
         <TextView
+            android:id="@+id/textoModalidade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -46,26 +39,63 @@
             android:textSize="16sp" />
 
         <TextView
+            android:id="@+id/textoNivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nível: Intermediário"
+            android:textColor="@color/texto_secundario"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textoProfessor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Professor: Prof. Leandro"
+            android:textColor="@color/texto_secundario"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textoPreRequisito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pré-requisito: Lógica de Programação"
+            android:textColor="@color/texto_secundario"
+            android:textSize="16sp" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:lineSpacingExtra="5dp"
-            android:text="O curso prepara o aluno para desenvolver sistemas, aplicativos e sites. Durante a formação são estudadas áreas como programação, banco de dados, desenvolvimento web e mobile."
+            android:text="Descrição:"
+            android:textColor="@color/texto"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textoDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4dp"
+            android:text="Estuda o desenvolvimento de aplicativos para Android com Kotlin."
             android:textColor="@color/texto_secundario"
             android:textSize="16sp" />
 
         <Button
-            android:id="@+id/botaoVerDisciplinas"
+            android:id="@+id/botaoCompartilhar"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginTop="30dp"
-            android:background="@drawable/botao_roxo"
-            android:text="Ver Disciplinas"
+            android:background="@drawable/botao_azul"
+            android:text="Compartilhar Disciplina"
             android:textAllCaps="false"
             android:textColor="@color/branco" />
 
         <Button
-            android:id="@+id/botaoVoltar"
+            android:id="@+id/botaoVoltarDetalhes"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginTop="10dp"

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Meu Curso ADS</string>
+    <string name="app_name">EduCONNECT</string>
+    <string name="logo_description">Logo do EduCONNECT</string>
+    <string name="nome_universidade">EduCONNECT</string>
 </resources>
